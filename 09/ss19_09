@@ -1,0 +1,31 @@
+let result = "javascript" + 5; 
+// result = "javascript5"
+// Toán tử `+` khi có một chuỗi thì sẽ thực hiện nối chuỗi.
+
+let result = "javascript" - 1; 
+// result = NaN
+// Toán tử `-` chỉ dùng cho số, nhưng "javascript" không thể chuyển thành số, nên kết quả là NaN.
+
+let result = "3" + 2; 
+// result = "32"
+// Vì có chuỗi `"3"`, nên `+` thực hiện nối chuỗi thay vì phép toán số học.
+
+let result = "5" - 4; 
+// result = 1
+// Toán tử `-` buộc `"5"` chuyển thành số 5 trước khi thực hiện phép toán.
+
+let result = isNaN("123"); 
+// result = false
+// `"123"` có thể chuyển thành số hợp lệ (123), nên không phải NaN.
+
+let result = isNaN("hello"); 
+// result = true
+// `"hello"` không thể chuyển thành số, nên kết quả là NaN và `isNaN(NaN)` trả về `true`.
+
+let result = Number.isNaN("123"); 
+// result = false
+// `"123"` không phải là NaN, mà là chuỗi, nên `Number.isNaN("123")` trả về `false`.
+
+let result = Number.isNaN(NaN); 
+// result = true
+// `Number.isNaN()` chỉ trả về `true` nếu giá trị thực sự là `NaN`.
